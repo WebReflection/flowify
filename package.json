@@ -1,0 +1,27 @@
+{
+  "name": "flowify",
+  "version": "2.0.0",
+  "description": "flow in a browserify transform",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.11.4",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
+    "through": "^2.3.8"
+  },
+  "license": "MIT",
+  "keywords": [
+    "browserify",
+    "transform",
+    "flow"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/flowify.git"
+  },
+  "author": "Andrea Giammarchi",
+  "bugs": {
+    "url": "https://github.com/WebReflection/flowify/issues"
+  },
+  "homepage": "https://github.com/WebReflection/flowify#readme"
+}
