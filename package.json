@@ -2,7 +2,7 @@
   "name": "flowify",
   "version": "2.1.0",
   "engines": {
-    "node": ">=4"
+    "node": ">=0.12"
   },
   "description": "flow in a browserify transform",
   "main": "index.js",
