@@ -7,7 +7,6 @@ var
     ast: false,
     babelrc: false,
     compact: false,
-    comments: false,
     plugins: ['transform-flow-strip-types']
   },
   through = require('through')
