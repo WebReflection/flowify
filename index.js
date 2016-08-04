@@ -7,7 +7,11 @@ var
     ast: false,
     babelrc: false,
     compact: false,
-    plugins: ['transform-flow-strip-types']
+    plugins: [
+      'typecheck',
+      'syntax-flow',
+      'transform-flow-strip-types'
+    ]
   },
   through = require('through')
 ;
@@ -22,7 +26,7 @@ module.exports = function(file) {
       try {
         data = babelCore.transform(data, babelConfig).code;
       } catch(e) {
-        this.emit('error', '[flow-strip-types] ' + file + ': ' + e);
+        this.emit('error', '[flowify] ' + file + ': ' + e);
       }
       this.queue(data);
       this.queue(null);

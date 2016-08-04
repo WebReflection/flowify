@@ -1,10 +1,6 @@
 # flowify
 The easiest way to introduce flow type annotation through browserify
 
-Please note this does not validate any type, at least not in its first release.
-
-This simply allows you to put flowtype annotations in your code and clean it up before other transforms.
-
 ```js
 // basic grunt example
 grunt.initConfig({
@@ -15,3 +11,7 @@ grunt.initConfig({
     }
 });
 ```
+
+Please note `v2.0.x` does not validate any type, it simply allows you to put flowtype annotations in your code and have it cleaned before other transforms.
+
+Starting from version `v2.1.x` also `typecheck` and `syntax-flow` are used before stripping types out.
