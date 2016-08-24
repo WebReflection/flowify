@@ -2,14 +2,17 @@
 
 var
   babelCore = require('babel-core'),
-  // configure it as clean and fast as possible
   babelConfig = {
     ast: false,
     babelrc: false,
     compact: false,
+    // these needs to be installed a part
     plugins: [
+      // babel-plugin-typecheck
       'typecheck',
+      // babel-plugin-syntax-flow
       'syntax-flow',
+      // babel-plugin-transform-flow-strip-types
       'transform-flow-strip-types'
     ]
   },

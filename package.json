@@ -8,9 +8,6 @@
   "main": "index.js",
   "dependencies": {
     "babel-core": "^6.11.4",
-    "babel-plugin-syntax-flow": "^6.8.0",
-    "babel-plugin-transform-flow-strip-types": "^6.8.0",
-    "babel-plugin-typecheck": "^3.9.0",
     "through": "^2.3.8"
   },
   "license": "MIT",
