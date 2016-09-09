@@ -26,10 +26,12 @@ module.exports = function(file) {
       data += buf;
     },
     function end() {
-      try {
-        data = babelCore.transform(data, babelConfig).code;
-      } catch(e) {
-        this.emit('error', '[flowify] ' + file + ': ' + e);
+      if (!/\.json$/.test(file)) {
+        try {
+          data = babelCore.transform(data, babelConfig).code;
+        } catch(e) {
+          this.emit('error', '[flowify] ' + file + ': ' + e);
+        }
       }
       this.queue(data);
       this.queue(null);
